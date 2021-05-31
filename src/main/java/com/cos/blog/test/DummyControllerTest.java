@@ -80,7 +80,7 @@ public class DummyControllerTest {
 			@Override
 			public IllegalArgumentException get() {
 				// TODO Auto-generated method stub
-				return new IllegalArgumentException("해당 유저는 없습니다. id: "+id);
+				return new IllegalArgumentException("해당 사용자는 없습니다. id: "+id);
 			}
 		});
 		return user;
