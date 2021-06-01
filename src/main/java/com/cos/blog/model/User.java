@@ -30,7 +30,7 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // 프로젝트에서 연결된 DB넘버링 전략을 따라간다
 	private int id; // 오라클 = 시퀀스, mysql = auto_increment
 	
-	@Column(nullable = false, length = 30)
+	@Column(unique = true, nullable = false, length = 30)
 	private String username; // 아이디
 	
 	@Column(nullable = false, length = 100) // 123456 > 해쉬 (비밀번호 암호화) 할거라 길게줌
