@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-
 public class Member {
 	private int id;
 	private String username;
@@ -16,13 +15,9 @@ public class Member {
 	
 	@Builder
 	public Member(int id, String username, String password, String email) {
-		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.email = email;
 	}
-	
-	
-	
 }
