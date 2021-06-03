@@ -48,7 +48,7 @@ public class User {
 	
 	private String oauth; // kakao, google
 	
-	// 내가 직접 시간을 넣으려면 Timestamp.valueOf(LocalDateTime.now())
+
 	@CreationTimestamp
 	private Timestamp createDate;
 	
